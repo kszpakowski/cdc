@@ -16,9 +16,6 @@ public class User extends BaseEntity {
     @Version
     private Long version;
 
-//    @OneToMany
-//    private Address address;
-
     public String getFirstname() {
         return firstname;
     }

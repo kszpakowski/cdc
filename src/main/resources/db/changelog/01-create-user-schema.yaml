@@ -1,6 +1,3 @@
-#  create table user_aud (rev integer not null, revtype tinyint, id bigint not null, firstname varchar(255), lastname varchar(255), primary key (rev, id));
-#  alter table user_aud add constraint FK89ntto9kobwahrwxbne2nqcnr foreign key (rev) references revinfo;
-
 databaseChangeLog:
   - changeSet:
       id: 1
@@ -53,7 +50,6 @@ databaseChangeLog:
             columnNames: id, rev
             constraintName: user_aud_pkey
             tableName: user_aud
-#  alter table user_aud add constraint FK89ntto9kobwahrwxbne2nqcnr foreign key (rev) references revinfo;
         -  addForeignKeyConstraint:
              baseColumnNames:  rev
              baseTableName:  user_aud

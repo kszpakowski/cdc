@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/00-create-envers-tables.yaml
+  - include:
+      file: db/changelog/01-create-user-schema.yaml

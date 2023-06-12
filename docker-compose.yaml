@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  db:
+    image: postgres:15.3
+    container_name: cdc-pg
+    environment:
+      POSTGRES_DB: cdc
+      POSTGRES_USER: cdc
+      POSTGRES_PASSWORD: cdc
+    ports:
+      - 5433:5432
